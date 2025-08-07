@@ -7,4 +7,54 @@
   <title>Welcome to Accessible Web</title>
 </head>
 <body>
+   <header role="banner">
+    <h1>Accessible Web: Learn HTML5 the Right Way</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about" title="Learn more about this site">About</a></li>
+        <li><a href="#articles" title="Read our latest tutorials">Articles</a></li>
+        <li><a href="#contact" title="Get in touch with us">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content" role="main">
+    <article>
+      <header>
+        <h2 id="about">About This Page</h2>
+      </header>
+      <p>This web page is built using semantic HTML5 elements to promote accessibility and search engine optimization (SEO). It is designed to be beginner-friendly and fully readable by screen readers and bots alike.</p>
+    </article>
+
+    <section aria-labelledby="articles">
+      <h2 id="articles">Featured Articles</h2>
+
+      <article>
+        <h3>Why Semantic HTML Matters</h3>
+        <p>Using semantic tags like <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code> helps screen readers understand your content better and improves your SEO rankings.</p>
+      </article>
+
+      <article>
+        <h3>Introduction to Accessibility</h3>
+        <p>Accessibility ensures that users with disabilities can navigate your site. Using correct HTML5 landmarks and providing meaningful link text is key.</p>
+      </article>
+    </section>
+
+    <aside aria-label="Quick Tips">
+      <h2>Quick SEO Tips</h2>
+      <ul>
+        <li>Use meaningful heading levels</li>
+        <li>Include alt text for images (if any)</li>
+        <li>Keep content human-readable</li>
+        <li>Write descriptive titles and meta descriptions</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer role="contentinfo">
+    <p id="contact">Contact us at <a href="mailto:info@accessibleweb.com">info@accessibleweb.com</a>.</p>
+    <p>&copy; 2025 Accessible Web. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
   
